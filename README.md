@@ -34,7 +34,13 @@ ML_Case_study/
   3. Gaussian Naive Bayes
   4. Decision Tree Classifier
   5. Support Vector Machine (SVC)
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix
+  6. Random Forest Classifier
+  7. AdaBoost Classifier
+  8. Gradient Boosting Classifier
+  9. Bagging Classifier
+  10. Multi-Layer Perceptron (MLP) Classifier
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score (Weighted), ROC-AUC, Confusion Matrix
+- **Interactive Interface**: In-notebook `ipywidgets` GUI (Section 25) & standalone Streamlit app (`app/streamlit_app.py`)
 
 ### 2. Regression Track (`notebooks/regression.ipynb`)
 - **Dataset**: OList Brazilian E-Commerce (`data/OList-Ecommerce.csv`)
@@ -83,13 +89,24 @@ pip install -r requirements.txt
 ### 4. Run the Notebooks
 Launch Jupyter Notebook or JupyterLab:
 ```bash
-# To run classification
+# To run classification (10 algorithms + in-notebook GUI)
 jupyter notebook notebooks/classification.ipynb
 
 # To run regression
 jupyter notebook notebooks/regression.ipynb
 ```
 *Alternatively, open any notebook directly in VS Code and select the `venv` Python kernel.*
+
+### 5. Run the Standalone Streamlit Web Application
+Launch the interactive Term Deposit Subscription Predictor:
+```bash
+streamlit run app/streamlit_app.py
+```
+This opens the web interface in your browser at `http://localhost:8501`, allowing you to:
+- Test customer predictions across all 10 classification models.
+- Adjust customer demographic, financial, and marketing contact parameters.
+- Inspect real-time probability estimates and customize decision thresholds.
+- View comparative benchmark tables and feature importance insights.
 
 ---
 

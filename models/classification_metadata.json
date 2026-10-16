@@ -1,0 +1,126 @@
+{
+  "benchmark_metrics": {
+    "Logistic Regression": {
+      "Accuracy": 0.8928,
+      "Precision": 0.5636,
+      "Recall": 0.2981,
+      "F1-Score (Weighted)": 0.8779,
+      "ROC-AUC": 0.8913
+    },
+    "K-Nearest Neighbors": {
+      "Accuracy": 0.8862,
+      "Precision": 0.5102,
+      "Recall": 0.2404,
+      "F1-Score (Weighted)": 0.8676,
+      "ROC-AUC": 0.7285
+    },
+    "Gaussian Naive Bayes": {
+      "Accuracy": 0.821,
+      "Precision": 0.3092,
+      "Recall": 0.4519,
+      "F1-Score (Weighted)": 0.835,
+      "ROC-AUC": 0.7881
+    },
+    "Decision Tree": {
+      "Accuracy": 0.8928,
+      "Precision": 0.5686,
+      "Recall": 0.2788,
+      "F1-Score (Weighted)": 0.8762,
+      "ROC-AUC": 0.8266
+    },
+    "Support Vector Machine": {
+      "Accuracy": 0.884,
+      "Precision": 0.4933,
+      "Recall": 0.3558,
+      "F1-Score (Weighted)": 0.8756,
+      "ROC-AUC": 0.8761
+    },
+    "Random Forest": {
+      "Accuracy": 0.8873,
+      "Precision": 0.5227,
+      "Recall": 0.2212,
+      "F1-Score (Weighted)": 0.8665,
+      "ROC-AUC": 0.8961
+    },
+    "AdaBoost": {
+      "Accuracy": 0.8906,
+      "Precision": 0.5455,
+      "Recall": 0.2885,
+      "F1-Score (Weighted)": 0.8754,
+      "ROC-AUC": 0.877
+    },
+    "Gradient Boosting": {
+      "Accuracy": 0.8906,
+      "Precision": 0.5309,
+      "Recall": 0.4135,
+      "F1-Score (Weighted)": 0.8846,
+      "ROC-AUC": 0.9052
+    },
+    "Bagging": {
+      "Accuracy": 0.8972,
+      "Precision": 0.5696,
+      "Recall": 0.4327,
+      "F1-Score (Weighted)": 0.891,
+      "ROC-AUC": 0.9069
+    },
+    "MLP Classifier": {
+      "Accuracy": 0.8939,
+      "Precision": 0.5645,
+      "Recall": 0.3365,
+      "F1-Score (Weighted)": 0.8819,
+      "ROC-AUC": 0.8988
+    }
+  },
+  "tuning_summary": {
+    "Logistic Regression": {
+      "Parameters Tuned": "None (Baseline)",
+      "Best Parameters": "max_iter=1000, random_state=42",
+      "Best CV Score": "N/A"
+    },
+    "K-Nearest Neighbors": {
+      "Parameters Tuned": "n_neighbors, metric",
+      "Best Parameters": "k=9, metric=euclidean",
+      "Best CV Score": "0.8787"
+    },
+    "Gaussian Naive Bayes": {
+      "Parameters Tuned": "None (Baseline)",
+      "Best Parameters": "var_smoothing=1e-09",
+      "Best CV Score": "N/A"
+    },
+    "Decision Tree": {
+      "Parameters Tuned": "max_depth",
+      "Best Parameters": "max_depth=3",
+      "Best CV Score": "0.8891"
+    },
+    "Support Vector Machine": {
+      "Parameters Tuned": "C, kernel",
+      "Best Parameters": "C=10, kernel=rbf",
+      "Best CV Score": "0.8901"
+    },
+    "Random Forest": {
+      "Parameters Tuned": "n_estimators, max_depth",
+      "Best Parameters": "n_estimators=50, max_depth=15",
+      "Best CV Score": "0.8807"
+    },
+    "AdaBoost": {
+      "Parameters Tuned": "n_estimators, learning_rate",
+      "Best Parameters": "n_estimators=50, learning_rate=1.0",
+      "Best CV Score": "0.8910"
+    },
+    "Gradient Boosting": {
+      "Parameters Tuned": "n_estimators, learning_rate, max_depth",
+      "Best Parameters": "n_estimators=150, learning_rate=0.1, max_depth=3",
+      "Best CV Score": "0.9002"
+    },
+    "Bagging": {
+      "Parameters Tuned": "n_estimators, max_samples",
+      "Best Parameters": "n_estimators=100, max_samples=1.0",
+      "Best CV Score": "0.8937"
+    },
+    "MLP Classifier": {
+      "Parameters Tuned": "hidden_layer_sizes, activation",
+      "Best Parameters": "hidden_layer_sizes=(100,), activation=relu",
+      "Best CV Score": "0.8892"
+    }
+  }
+}
