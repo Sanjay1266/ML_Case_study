@@ -1,0 +1,42 @@
+{
+  "feature_columns": [
+    "Recency",
+    "Frequency",
+    "Monetary",
+    "AverageQuantity",
+    "AverageUnitPrice"
+  ],
+  "selected_k": 2,
+  "selected_linkage": "complete",
+  "n_customers": 4338,
+  "reference_date": "2011-12-10",
+  "explained_variance": [
+    0.4605415136805298,
+    0.23730552948820915
+  ],
+  "total_variance_explained": 0.6978470431687389,
+  "kmeans_metrics": {
+    "silhouette": 0.3000566979218158,
+    "davies_bouldin": 1.2849660571377506,
+    "calinski_harabasz": 1891.7134001058046
+  },
+  "agg_metrics": {
+    "silhouette": 0.7472990999303939,
+    "davies_bouldin": 0.5808216409691634,
+    "calinski_harabasz": 177.34783990306119
+  },
+  "kmeans_cluster_sizes": {
+    "0": 1645,
+    "1": 2693
+  },
+  "agg_cluster_sizes": {
+    "0": 4330,
+    "1": 8
+  },
+  "transaction_rows_after_cleaning": 392692,
+  "unique_customers": 4338,
+  "date_range": [
+    "2010-12-01 08:26:00",
+    "2011-12-09 12:50:00"
+  ]
+}
